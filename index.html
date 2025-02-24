@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-screen" id="welcomeScreen">
+        <h2>Bem-vindo(a) à Calculadora</h2>
+        <div class="input-group">
+            <input type="text" id="userName" placeholder="Digite seu nome">
+            <button onclick="startCalculator()">Começar</button>
+        </div>
+    </div>
+
+    <div class="calculator-container" id="calculatorScreen" style="display: none;">
+        <h2 id="welcomeMessage"></h2>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="num1" placeholder="Primeiro número">
+                <input type="text" id="num2" placeholder="Segundo número">
+                <div id="result">Resultado: </div>
+            </div>
+            <div class="operations">
+                <button onclick="calculate('+')" class="op-btn">Soma</button>
+                <button onclick="calculate('-')" class="op-btn">Subtração</button>
+                <button onclick="calculate('*')" class="op-btn">Multiplicação</button>
+                <button onclick="calculate('/')" class="op-btn">Divisão</button>
+                <button onclick="calculate('%')" class="op-btn">Porcentagem</button>
+            </div>
+            <button onclick="resetCalculator()" class="reset-btn">Sair</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
